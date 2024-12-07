@@ -1,0 +1,1284 @@
+INFO - 2024-11-09 11:06:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-09 11:06:59 --> ErrorException: Undefined variable $le_total
+in APPPATH/Views/compte/compte_success.php on line 5.
+ 1 APPPATH/Views/compte/compte_success.php(5): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(228): include('/home/2024DIFAL3/e22100290/public_html/V1/ci/app/Views/compte/compte_success.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Compte.php(57): view()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Compte->creer()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-11-09 11:10:21 --> mysqli_sql_exception: Duplicate entry 'ezrtzestgzs"etg' for key 'PRIMARY' in /home/2024DIFAL3/e22100290/public_html/V1/ci/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/2024DIFAL3/e22100290/public_html/V1/ci/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/2024DIFAL3/e22100290/public_html/V1/ci/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/2024DIFAL3/e22100290/public_html/V1/ci/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/2024DIFAL3/e22100290/public_html/V1/ci/app/Models/Db_model.php(45): CodeIgniter\Database\BaseConnection->query()
+#4 /home/2024DIFAL3/e22100290/public_html/V1/ci/app/Controllers/Compte.php(51): App\Models\Db_model->set_compte()
+#5 /home/2024DIFAL3/e22100290/public_html/V1/ci/system/CodeIgniter.php(941): App\Controllers\Compte->creer()
+#6 /home/2024DIFAL3/e22100290/public_html/V1/ci/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#7 /home/2024DIFAL3/e22100290/public_html/V1/ci/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/2024DIFAL3/e22100290/public_html/V1/ci/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-11-09 11:10:21 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry 'ezrtzestgzs"etg' for key 'PRIMARY'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 APPPATH/Models/Db_model.php(45): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Compte.php(51): App\Models\Db_model->set_compte()
+ 3 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Compte->creer()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-09 11:10:21 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry 'ezrtzestgzs"etg' for key 'PRIMARY'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH/Models/Db_model.php(45): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH/Controllers/Compte.php(51): App\Models\Db_model->set_compte()
+ 5 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Compte->creer()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-09 11:10:21 --> [Caused by] mysqli_sql_exception: Duplicate entry 'ezrtzestgzs"etg' for key 'PRIMARY'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 APPPATH/Models/Db_model.php(45): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Controllers/Compte.php(51): App\Models\Db_model->set_compte()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Compte->creer()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-09 11:10:38 --> ErrorException: Undefined variable $nb_compte
+in APPPATH/Views/compte/compte_success.php on line 5.
+ 1 APPPATH/Views/compte/compte_success.php(5): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(228): include('/home/2024DIFAL3/e22100290/public_html/V1/ci/app/Views/compte/compte_success.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Compte.php(57): view()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Compte->creer()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-09 11:12:44 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+in SYSTEMPATH/Database/BaseConnection.php on line 884.
+ 1 SYSTEMPATH/Model.php(662): CodeIgniter\Database\BaseConnection->table()
+ 2 SYSTEMPATH/Model.php(864): CodeIgniter\Model->builder()
+ 3 APPPATH/Controllers/Compte.php(50): CodeIgniter\Model->__call()
+ 4 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Compte->creer()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-11-09 11:13:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-09 11:13:22 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+in SYSTEMPATH/Database/BaseConnection.php on line 884.
+ 1 SYSTEMPATH/Model.php(662): CodeIgniter\Database\BaseConnection->table()
+ 2 SYSTEMPATH/Model.php(864): CodeIgniter\Model->builder()
+ 3 APPPATH/Controllers/Compte.php(50): CodeIgniter\Model->__call()
+ 4 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Compte->creer()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-11-09 11:14:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-09 11:14:08 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+in SYSTEMPATH/Database/BaseConnection.php on line 884.
+ 1 SYSTEMPATH/Model.php(662): CodeIgniter\Database\BaseConnection->table()
+ 2 SYSTEMPATH/Model.php(864): CodeIgniter\Model->builder()
+ 3 APPPATH/Controllers/Compte.php(50): CodeIgniter\Model->__call()
+ 4 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Compte->creer()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-09 11:16:19 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+in SYSTEMPATH/Database/BaseConnection.php on line 884.
+ 1 SYSTEMPATH/Model.php(662): CodeIgniter\Database\BaseConnection->table()
+ 2 SYSTEMPATH/Model.php(864): CodeIgniter\Model->builder()
+ 3 APPPATH/Controllers/Compte.php(56): CodeIgniter\Model->__call()
+ 4 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Compte->creer()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-11-09 11:16:20 --> mysqli_sql_exception: Duplicate entry 'ezrtzestgzs"etg' for key 'PRIMARY' in /home/2024DIFAL3/e22100290/public_html/V1/ci/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/2024DIFAL3/e22100290/public_html/V1/ci/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/2024DIFAL3/e22100290/public_html/V1/ci/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/2024DIFAL3/e22100290/public_html/V1/ci/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/2024DIFAL3/e22100290/public_html/V1/ci/app/Models/Db_model.php(45): CodeIgniter\Database\BaseConnection->query()
+#4 /home/2024DIFAL3/e22100290/public_html/V1/ci/app/Controllers/Compte.php(52): App\Models\Db_model->set_compte()
+#5 /home/2024DIFAL3/e22100290/public_html/V1/ci/system/CodeIgniter.php(941): App\Controllers\Compte->creer()
+#6 /home/2024DIFAL3/e22100290/public_html/V1/ci/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#7 /home/2024DIFAL3/e22100290/public_html/V1/ci/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/2024DIFAL3/e22100290/public_html/V1/ci/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-11-09 11:16:20 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry 'ezrtzestgzs"etg' for key 'PRIMARY'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 APPPATH/Models/Db_model.php(45): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Compte.php(52): App\Models\Db_model->set_compte()
+ 3 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Compte->creer()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-09 11:16:20 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry 'ezrtzestgzs"etg' for key 'PRIMARY'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH/Models/Db_model.php(45): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH/Controllers/Compte.php(52): App\Models\Db_model->set_compte()
+ 5 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Compte->creer()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-09 11:16:20 --> [Caused by] mysqli_sql_exception: Duplicate entry 'ezrtzestgzs"etg' for key 'PRIMARY'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 APPPATH/Models/Db_model.php(45): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Controllers/Compte.php(52): App\Models\Db_model->set_compte()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Compte->creer()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-09 11:16:29 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+in SYSTEMPATH/Database/BaseConnection.php on line 884.
+ 1 SYSTEMPATH/Model.php(662): CodeIgniter\Database\BaseConnection->table()
+ 2 SYSTEMPATH/Model.php(864): CodeIgniter\Model->builder()
+ 3 APPPATH/Controllers/Compte.php(56): CodeIgniter\Model->__call()
+ 4 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Compte->creer()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-11-09 11:19:23 --> mysqli_sql_exception: Duplicate entry 'ezrtzestgzs"etg' for key 'PRIMARY' in /home/2024DIFAL3/e22100290/public_html/V1/ci/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/2024DIFAL3/e22100290/public_html/V1/ci/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/2024DIFAL3/e22100290/public_html/V1/ci/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/2024DIFAL3/e22100290/public_html/V1/ci/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/2024DIFAL3/e22100290/public_html/V1/ci/app/Models/Db_model.php(45): CodeIgniter\Database\BaseConnection->query()
+#4 /home/2024DIFAL3/e22100290/public_html/V1/ci/app/Controllers/Compte.php(52): App\Models\Db_model->set_compte()
+#5 /home/2024DIFAL3/e22100290/public_html/V1/ci/system/CodeIgniter.php(941): App\Controllers\Compte->creer()
+#6 /home/2024DIFAL3/e22100290/public_html/V1/ci/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#7 /home/2024DIFAL3/e22100290/public_html/V1/ci/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/2024DIFAL3/e22100290/public_html/V1/ci/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-11-09 11:19:23 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry 'ezrtzestgzs"etg' for key 'PRIMARY'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 APPPATH/Models/Db_model.php(45): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Compte.php(52): App\Models\Db_model->set_compte()
+ 3 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Compte->creer()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-09 11:19:23 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry 'ezrtzestgzs"etg' for key 'PRIMARY'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH/Models/Db_model.php(45): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH/Controllers/Compte.php(52): App\Models\Db_model->set_compte()
+ 5 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Compte->creer()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-09 11:19:23 --> [Caused by] mysqli_sql_exception: Duplicate entry 'ezrtzestgzs"etg' for key 'PRIMARY'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 APPPATH/Models/Db_model.php(45): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Controllers/Compte.php(52): App\Models\Db_model->set_compte()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Compte->creer()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-09 11:19:29 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+in SYSTEMPATH/Database/BaseConnection.php on line 884.
+ 1 SYSTEMPATH/Model.php(662): CodeIgniter\Database\BaseConnection->table()
+ 2 SYSTEMPATH/Model.php(864): CodeIgniter\Model->builder()
+ 3 APPPATH/Controllers/Compte.php(56): CodeIgniter\Model->__call()
+ 4 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Compte->creer()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-11-09 11:19:32 --> mysqli_sql_exception: Duplicate entry 'ezrtzestgzs"etg' for key 'PRIMARY' in /home/2024DIFAL3/e22100290/public_html/V1/ci/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/2024DIFAL3/e22100290/public_html/V1/ci/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/2024DIFAL3/e22100290/public_html/V1/ci/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/2024DIFAL3/e22100290/public_html/V1/ci/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/2024DIFAL3/e22100290/public_html/V1/ci/app/Models/Db_model.php(45): CodeIgniter\Database\BaseConnection->query()
+#4 /home/2024DIFAL3/e22100290/public_html/V1/ci/app/Controllers/Compte.php(52): App\Models\Db_model->set_compte()
+#5 /home/2024DIFAL3/e22100290/public_html/V1/ci/system/CodeIgniter.php(941): App\Controllers\Compte->creer()
+#6 /home/2024DIFAL3/e22100290/public_html/V1/ci/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#7 /home/2024DIFAL3/e22100290/public_html/V1/ci/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/2024DIFAL3/e22100290/public_html/V1/ci/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-11-09 11:19:32 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry 'ezrtzestgzs"etg' for key 'PRIMARY'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 APPPATH/Models/Db_model.php(45): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Compte.php(52): App\Models\Db_model->set_compte()
+ 3 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Compte->creer()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-09 11:19:32 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry 'ezrtzestgzs"etg' for key 'PRIMARY'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH/Models/Db_model.php(45): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH/Controllers/Compte.php(52): App\Models\Db_model->set_compte()
+ 5 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Compte->creer()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-09 11:19:32 --> [Caused by] mysqli_sql_exception: Duplicate entry 'ezrtzestgzs"etg' for key 'PRIMARY'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 APPPATH/Models/Db_model.php(45): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Controllers/Compte.php(52): App\Models\Db_model->set_compte()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Compte->creer()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-11-09 11:19:32 --> mysqli_sql_exception: Duplicate entry 'ezrtzestgzs"etg' for key 'PRIMARY' in /home/2024DIFAL3/e22100290/public_html/V1/ci/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/2024DIFAL3/e22100290/public_html/V1/ci/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/2024DIFAL3/e22100290/public_html/V1/ci/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/2024DIFAL3/e22100290/public_html/V1/ci/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/2024DIFAL3/e22100290/public_html/V1/ci/app/Models/Db_model.php(45): CodeIgniter\Database\BaseConnection->query()
+#4 /home/2024DIFAL3/e22100290/public_html/V1/ci/app/Controllers/Compte.php(52): App\Models\Db_model->set_compte()
+#5 /home/2024DIFAL3/e22100290/public_html/V1/ci/system/CodeIgniter.php(941): App\Controllers\Compte->creer()
+#6 /home/2024DIFAL3/e22100290/public_html/V1/ci/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#7 /home/2024DIFAL3/e22100290/public_html/V1/ci/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/2024DIFAL3/e22100290/public_html/V1/ci/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-11-09 11:19:32 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry 'ezrtzestgzs"etg' for key 'PRIMARY'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 APPPATH/Models/Db_model.php(45): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Compte.php(52): App\Models\Db_model->set_compte()
+ 3 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Compte->creer()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-09 11:19:32 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry 'ezrtzestgzs"etg' for key 'PRIMARY'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH/Models/Db_model.php(45): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH/Controllers/Compte.php(52): App\Models\Db_model->set_compte()
+ 5 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Compte->creer()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-09 11:19:32 --> [Caused by] mysqli_sql_exception: Duplicate entry 'ezrtzestgzs"etg' for key 'PRIMARY'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 APPPATH/Models/Db_model.php(45): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Controllers/Compte.php(52): App\Models\Db_model->set_compte()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Compte->creer()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-11-09 11:19:33 --> mysqli_sql_exception: Duplicate entry 'ezrtzestgzs"etg' for key 'PRIMARY' in /home/2024DIFAL3/e22100290/public_html/V1/ci/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/2024DIFAL3/e22100290/public_html/V1/ci/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/2024DIFAL3/e22100290/public_html/V1/ci/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/2024DIFAL3/e22100290/public_html/V1/ci/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/2024DIFAL3/e22100290/public_html/V1/ci/app/Models/Db_model.php(45): CodeIgniter\Database\BaseConnection->query()
+#4 /home/2024DIFAL3/e22100290/public_html/V1/ci/app/Controllers/Compte.php(52): App\Models\Db_model->set_compte()
+#5 /home/2024DIFAL3/e22100290/public_html/V1/ci/system/CodeIgniter.php(941): App\Controllers\Compte->creer()
+#6 /home/2024DIFAL3/e22100290/public_html/V1/ci/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#7 /home/2024DIFAL3/e22100290/public_html/V1/ci/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/2024DIFAL3/e22100290/public_html/V1/ci/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-11-09 11:19:33 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry 'ezrtzestgzs"etg' for key 'PRIMARY'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 APPPATH/Models/Db_model.php(45): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Compte.php(52): App\Models\Db_model->set_compte()
+ 3 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Compte->creer()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-09 11:19:33 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry 'ezrtzestgzs"etg' for key 'PRIMARY'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH/Models/Db_model.php(45): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH/Controllers/Compte.php(52): App\Models\Db_model->set_compte()
+ 5 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Compte->creer()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-09 11:19:33 --> [Caused by] mysqli_sql_exception: Duplicate entry 'ezrtzestgzs"etg' for key 'PRIMARY'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 APPPATH/Models/Db_model.php(45): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Controllers/Compte.php(52): App\Models\Db_model->set_compte()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Compte->creer()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-09 11:22:54 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+in SYSTEMPATH/Database/BaseConnection.php on line 884.
+ 1 SYSTEMPATH/Model.php(662): CodeIgniter\Database\BaseConnection->table()
+ 2 SYSTEMPATH/Model.php(864): CodeIgniter\Model->builder()
+ 3 APPPATH/Controllers/Compte.php(56): CodeIgniter\Model->__call()
+ 4 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Compte->creer()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-11-09 11:28:52 --> mysqli_sql_exception: Duplicate entry 'ezrtzestgzs"etg' for key 'PRIMARY' in /home/2024DIFAL3/e22100290/public_html/V1/ci/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/2024DIFAL3/e22100290/public_html/V1/ci/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/2024DIFAL3/e22100290/public_html/V1/ci/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/2024DIFAL3/e22100290/public_html/V1/ci/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/2024DIFAL3/e22100290/public_html/V1/ci/app/Models/Db_model.php(45): CodeIgniter\Database\BaseConnection->query()
+#4 /home/2024DIFAL3/e22100290/public_html/V1/ci/app/Controllers/Compte.php(52): App\Models\Db_model->set_compte()
+#5 /home/2024DIFAL3/e22100290/public_html/V1/ci/system/CodeIgniter.php(941): App\Controllers\Compte->creer()
+#6 /home/2024DIFAL3/e22100290/public_html/V1/ci/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#7 /home/2024DIFAL3/e22100290/public_html/V1/ci/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/2024DIFAL3/e22100290/public_html/V1/ci/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-11-09 11:28:52 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry 'ezrtzestgzs"etg' for key 'PRIMARY'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 APPPATH/Models/Db_model.php(45): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Compte.php(52): App\Models\Db_model->set_compte()
+ 3 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Compte->creer()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-09 11:28:52 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry 'ezrtzestgzs"etg' for key 'PRIMARY'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH/Models/Db_model.php(45): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH/Controllers/Compte.php(52): App\Models\Db_model->set_compte()
+ 5 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Compte->creer()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-09 11:28:52 --> [Caused by] mysqli_sql_exception: Duplicate entry 'ezrtzestgzs"etg' for key 'PRIMARY'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 APPPATH/Models/Db_model.php(45): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Controllers/Compte.php(52): App\Models\Db_model->set_compte()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Compte->creer()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-09 11:29:00 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+in SYSTEMPATH/Database/BaseConnection.php on line 884.
+ 1 SYSTEMPATH/Model.php(662): CodeIgniter\Database\BaseConnection->table()
+ 2 SYSTEMPATH/Model.php(864): CodeIgniter\Model->builder()
+ 3 APPPATH/Controllers/Compte.php(57): CodeIgniter\Model->__call()
+ 4 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Compte->creer()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-11-09 11:29:01 --> mysqli_sql_exception: Duplicate entry 'ezrtzestgzs"etg' for key 'PRIMARY' in /home/2024DIFAL3/e22100290/public_html/V1/ci/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/2024DIFAL3/e22100290/public_html/V1/ci/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/2024DIFAL3/e22100290/public_html/V1/ci/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/2024DIFAL3/e22100290/public_html/V1/ci/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/2024DIFAL3/e22100290/public_html/V1/ci/app/Models/Db_model.php(45): CodeIgniter\Database\BaseConnection->query()
+#4 /home/2024DIFAL3/e22100290/public_html/V1/ci/app/Controllers/Compte.php(52): App\Models\Db_model->set_compte()
+#5 /home/2024DIFAL3/e22100290/public_html/V1/ci/system/CodeIgniter.php(941): App\Controllers\Compte->creer()
+#6 /home/2024DIFAL3/e22100290/public_html/V1/ci/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#7 /home/2024DIFAL3/e22100290/public_html/V1/ci/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/2024DIFAL3/e22100290/public_html/V1/ci/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-11-09 11:29:01 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry 'ezrtzestgzs"etg' for key 'PRIMARY'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 APPPATH/Models/Db_model.php(45): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Compte.php(52): App\Models\Db_model->set_compte()
+ 3 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Compte->creer()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-09 11:29:01 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry 'ezrtzestgzs"etg' for key 'PRIMARY'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH/Models/Db_model.php(45): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH/Controllers/Compte.php(52): App\Models\Db_model->set_compte()
+ 5 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Compte->creer()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-09 11:29:01 --> [Caused by] mysqli_sql_exception: Duplicate entry 'ezrtzestgzs"etg' for key 'PRIMARY'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 APPPATH/Models/Db_model.php(45): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Controllers/Compte.php(52): App\Models\Db_model->set_compte()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Compte->creer()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-11-09 11:29:02 --> mysqli_sql_exception: Duplicate entry 'ezrtzestgzs"etg' for key 'PRIMARY' in /home/2024DIFAL3/e22100290/public_html/V1/ci/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/2024DIFAL3/e22100290/public_html/V1/ci/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/2024DIFAL3/e22100290/public_html/V1/ci/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/2024DIFAL3/e22100290/public_html/V1/ci/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/2024DIFAL3/e22100290/public_html/V1/ci/app/Models/Db_model.php(45): CodeIgniter\Database\BaseConnection->query()
+#4 /home/2024DIFAL3/e22100290/public_html/V1/ci/app/Controllers/Compte.php(52): App\Models\Db_model->set_compte()
+#5 /home/2024DIFAL3/e22100290/public_html/V1/ci/system/CodeIgniter.php(941): App\Controllers\Compte->creer()
+#6 /home/2024DIFAL3/e22100290/public_html/V1/ci/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#7 /home/2024DIFAL3/e22100290/public_html/V1/ci/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/2024DIFAL3/e22100290/public_html/V1/ci/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-11-09 11:29:02 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry 'ezrtzestgzs"etg' for key 'PRIMARY'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 APPPATH/Models/Db_model.php(45): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Compte.php(52): App\Models\Db_model->set_compte()
+ 3 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Compte->creer()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-09 11:29:02 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry 'ezrtzestgzs"etg' for key 'PRIMARY'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH/Models/Db_model.php(45): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH/Controllers/Compte.php(52): App\Models\Db_model->set_compte()
+ 5 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Compte->creer()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-09 11:29:02 --> [Caused by] mysqli_sql_exception: Duplicate entry 'ezrtzestgzs"etg' for key 'PRIMARY'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 APPPATH/Models/Db_model.php(45): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Controllers/Compte.php(52): App\Models\Db_model->set_compte()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Compte->creer()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-11-09 11:29:02 --> mysqli_sql_exception: Duplicate entry 'ezrtzestgzs"etg' for key 'PRIMARY' in /home/2024DIFAL3/e22100290/public_html/V1/ci/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/2024DIFAL3/e22100290/public_html/V1/ci/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/2024DIFAL3/e22100290/public_html/V1/ci/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/2024DIFAL3/e22100290/public_html/V1/ci/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/2024DIFAL3/e22100290/public_html/V1/ci/app/Models/Db_model.php(45): CodeIgniter\Database\BaseConnection->query()
+#4 /home/2024DIFAL3/e22100290/public_html/V1/ci/app/Controllers/Compte.php(52): App\Models\Db_model->set_compte()
+#5 /home/2024DIFAL3/e22100290/public_html/V1/ci/system/CodeIgniter.php(941): App\Controllers\Compte->creer()
+#6 /home/2024DIFAL3/e22100290/public_html/V1/ci/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#7 /home/2024DIFAL3/e22100290/public_html/V1/ci/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/2024DIFAL3/e22100290/public_html/V1/ci/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-11-09 11:29:02 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry 'ezrtzestgzs"etg' for key 'PRIMARY'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 APPPATH/Models/Db_model.php(45): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Compte.php(52): App\Models\Db_model->set_compte()
+ 3 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Compte->creer()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-09 11:29:02 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry 'ezrtzestgzs"etg' for key 'PRIMARY'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH/Models/Db_model.php(45): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH/Controllers/Compte.php(52): App\Models\Db_model->set_compte()
+ 5 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Compte->creer()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-09 11:29:02 --> [Caused by] mysqli_sql_exception: Duplicate entry 'ezrtzestgzs"etg' for key 'PRIMARY'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 APPPATH/Models/Db_model.php(45): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Controllers/Compte.php(52): App\Models\Db_model->set_compte()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Compte->creer()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-09 11:30:52 --> ErrorException: Cannot use App\Controllers\Compte as Compte because the name is already in use
+in APPPATH/Config/Routes.php on line 8.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-11-09 11:31:15 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+in SYSTEMPATH/Database/BaseConnection.php on line 884.
+ 1 SYSTEMPATH/Model.php(662): CodeIgniter\Database\BaseConnection->table()
+ 2 SYSTEMPATH/Model.php(864): CodeIgniter\Model->builder()
+ 3 APPPATH/Controllers/Compte.php(57): CodeIgniter\Model->__call()
+ 4 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Compte->creer()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-11-09 11:32:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-09 11:32:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-09 11:32:28 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+in SYSTEMPATH/Database/BaseConnection.php on line 884.
+ 1 SYSTEMPATH/Model.php(662): CodeIgniter\Database\BaseConnection->table()
+ 2 SYSTEMPATH/Model.php(864): CodeIgniter\Model->builder()
+ 3 APPPATH/Controllers/Compte.php(57): CodeIgniter\Model->__call()
+ 4 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Compte->creer()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-11-09 11:32:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-09 11:33:20 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+in SYSTEMPATH/Database/BaseConnection.php on line 884.
+ 1 SYSTEMPATH/Model.php(662): CodeIgniter\Database\BaseConnection->table()
+ 2 SYSTEMPATH/Model.php(864): CodeIgniter\Model->builder()
+ 3 APPPATH/Controllers/Compte.php(48): CodeIgniter\Model->__call()
+ 4 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Compte->creer()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-11-09 11:34:29 --> mysqli_sql_exception: Duplicate entry 'zfsqfqzfg' for key 'PRIMARY' in /home/2024DIFAL3/e22100290/public_html/V1/ci/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/2024DIFAL3/e22100290/public_html/V1/ci/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/2024DIFAL3/e22100290/public_html/V1/ci/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/2024DIFAL3/e22100290/public_html/V1/ci/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/2024DIFAL3/e22100290/public_html/V1/ci/app/Models/Db_model.php(45): CodeIgniter\Database\BaseConnection->query()
+#4 /home/2024DIFAL3/e22100290/public_html/V1/ci/app/Controllers/Compte.php(52): App\Models\Db_model->set_compte()
+#5 /home/2024DIFAL3/e22100290/public_html/V1/ci/system/CodeIgniter.php(941): App\Controllers\Compte->creer()
+#6 /home/2024DIFAL3/e22100290/public_html/V1/ci/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#7 /home/2024DIFAL3/e22100290/public_html/V1/ci/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/2024DIFAL3/e22100290/public_html/V1/ci/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-11-09 11:34:29 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry 'zfsqfqzfg' for key 'PRIMARY'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 APPPATH/Models/Db_model.php(45): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Compte.php(52): App\Models\Db_model->set_compte()
+ 3 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Compte->creer()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-09 11:34:29 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry 'zfsqfqzfg' for key 'PRIMARY'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH/Models/Db_model.php(45): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH/Controllers/Compte.php(52): App\Models\Db_model->set_compte()
+ 5 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Compte->creer()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-09 11:34:29 --> [Caused by] mysqli_sql_exception: Duplicate entry 'zfsqfqzfg' for key 'PRIMARY'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 APPPATH/Models/Db_model.php(45): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Controllers/Compte.php(52): App\Models\Db_model->set_compte()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Compte->creer()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-09 11:34:36 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+in SYSTEMPATH/Database/BaseConnection.php on line 884.
+ 1 SYSTEMPATH/Model.php(662): CodeIgniter\Database\BaseConnection->table()
+ 2 SYSTEMPATH/Model.php(864): CodeIgniter\Model->builder()
+ 3 APPPATH/Controllers/Compte.php(56): CodeIgniter\Model->__call()
+ 4 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Compte->creer()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-11-09 11:35:47 --> mysqli_sql_exception: Duplicate entry 'zfsqfqzfg' for key 'PRIMARY' in /home/2024DIFAL3/e22100290/public_html/V1/ci/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/2024DIFAL3/e22100290/public_html/V1/ci/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/2024DIFAL3/e22100290/public_html/V1/ci/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/2024DIFAL3/e22100290/public_html/V1/ci/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/2024DIFAL3/e22100290/public_html/V1/ci/app/Models/Db_model.php(45): CodeIgniter\Database\BaseConnection->query()
+#4 /home/2024DIFAL3/e22100290/public_html/V1/ci/app/Controllers/Compte.php(52): App\Models\Db_model->set_compte()
+#5 /home/2024DIFAL3/e22100290/public_html/V1/ci/system/CodeIgniter.php(941): App\Controllers\Compte->creer()
+#6 /home/2024DIFAL3/e22100290/public_html/V1/ci/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#7 /home/2024DIFAL3/e22100290/public_html/V1/ci/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/2024DIFAL3/e22100290/public_html/V1/ci/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-11-09 11:35:47 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry 'zfsqfqzfg' for key 'PRIMARY'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 APPPATH/Models/Db_model.php(45): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Compte.php(52): App\Models\Db_model->set_compte()
+ 3 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Compte->creer()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-09 11:35:47 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry 'zfsqfqzfg' for key 'PRIMARY'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH/Models/Db_model.php(45): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH/Controllers/Compte.php(52): App\Models\Db_model->set_compte()
+ 5 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Compte->creer()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-09 11:35:47 --> [Caused by] mysqli_sql_exception: Duplicate entry 'zfsqfqzfg' for key 'PRIMARY'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 APPPATH/Models/Db_model.php(45): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Controllers/Compte.php(52): App\Models\Db_model->set_compte()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Compte->creer()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-09 11:35:54 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+in SYSTEMPATH/Database/BaseConnection.php on line 884.
+ 1 SYSTEMPATH/Model.php(662): CodeIgniter\Database\BaseConnection->table()
+ 2 SYSTEMPATH/Model.php(864): CodeIgniter\Model->builder()
+ 3 APPPATH/Controllers/Compte.php(56): CodeIgniter\Model->__call()
+ 4 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Compte->creer()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-11-09 11:36:54 --> mysqli_sql_exception: Duplicate entry 'zfsqfqzfg' for key 'PRIMARY' in /home/2024DIFAL3/e22100290/public_html/V1/ci/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/2024DIFAL3/e22100290/public_html/V1/ci/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/2024DIFAL3/e22100290/public_html/V1/ci/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/2024DIFAL3/e22100290/public_html/V1/ci/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/2024DIFAL3/e22100290/public_html/V1/ci/app/Models/Db_model.php(45): CodeIgniter\Database\BaseConnection->query()
+#4 /home/2024DIFAL3/e22100290/public_html/V1/ci/app/Controllers/Compte.php(52): App\Models\Db_model->set_compte()
+#5 /home/2024DIFAL3/e22100290/public_html/V1/ci/system/CodeIgniter.php(941): App\Controllers\Compte->creer()
+#6 /home/2024DIFAL3/e22100290/public_html/V1/ci/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#7 /home/2024DIFAL3/e22100290/public_html/V1/ci/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/2024DIFAL3/e22100290/public_html/V1/ci/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-11-09 11:36:54 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry 'zfsqfqzfg' for key 'PRIMARY'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 APPPATH/Models/Db_model.php(45): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Compte.php(52): App\Models\Db_model->set_compte()
+ 3 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Compte->creer()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-09 11:36:54 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry 'zfsqfqzfg' for key 'PRIMARY'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH/Models/Db_model.php(45): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH/Controllers/Compte.php(52): App\Models\Db_model->set_compte()
+ 5 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Compte->creer()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-09 11:36:54 --> [Caused by] mysqli_sql_exception: Duplicate entry 'zfsqfqzfg' for key 'PRIMARY'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 APPPATH/Models/Db_model.php(45): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Controllers/Compte.php(52): App\Models\Db_model->set_compte()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Compte->creer()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-09 11:36:59 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+in SYSTEMPATH/Database/BaseConnection.php on line 884.
+ 1 SYSTEMPATH/Model.php(662): CodeIgniter\Database\BaseConnection->table()
+ 2 SYSTEMPATH/Model.php(864): CodeIgniter\Model->builder()
+ 3 APPPATH/Controllers/Compte.php(56): CodeIgniter\Model->__call()
+ 4 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Compte->creer()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-11-09 11:37:00 --> mysqli_sql_exception: Duplicate entry 'zfsqfqzfg' for key 'PRIMARY' in /home/2024DIFAL3/e22100290/public_html/V1/ci/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/2024DIFAL3/e22100290/public_html/V1/ci/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/2024DIFAL3/e22100290/public_html/V1/ci/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/2024DIFAL3/e22100290/public_html/V1/ci/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/2024DIFAL3/e22100290/public_html/V1/ci/app/Models/Db_model.php(45): CodeIgniter\Database\BaseConnection->query()
+#4 /home/2024DIFAL3/e22100290/public_html/V1/ci/app/Controllers/Compte.php(52): App\Models\Db_model->set_compte()
+#5 /home/2024DIFAL3/e22100290/public_html/V1/ci/system/CodeIgniter.php(941): App\Controllers\Compte->creer()
+#6 /home/2024DIFAL3/e22100290/public_html/V1/ci/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#7 /home/2024DIFAL3/e22100290/public_html/V1/ci/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/2024DIFAL3/e22100290/public_html/V1/ci/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-11-09 11:37:00 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry 'zfsqfqzfg' for key 'PRIMARY'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 APPPATH/Models/Db_model.php(45): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Compte.php(52): App\Models\Db_model->set_compte()
+ 3 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Compte->creer()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-09 11:37:00 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry 'zfsqfqzfg' for key 'PRIMARY'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH/Models/Db_model.php(45): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH/Controllers/Compte.php(52): App\Models\Db_model->set_compte()
+ 5 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Compte->creer()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-09 11:37:00 --> [Caused by] mysqli_sql_exception: Duplicate entry 'zfsqfqzfg' for key 'PRIMARY'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 APPPATH/Models/Db_model.php(45): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Controllers/Compte.php(52): App\Models\Db_model->set_compte()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Compte->creer()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-11-09 11:37:00 --> mysqli_sql_exception: Duplicate entry 'zfsqfqzfg' for key 'PRIMARY' in /home/2024DIFAL3/e22100290/public_html/V1/ci/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/2024DIFAL3/e22100290/public_html/V1/ci/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/2024DIFAL3/e22100290/public_html/V1/ci/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/2024DIFAL3/e22100290/public_html/V1/ci/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/2024DIFAL3/e22100290/public_html/V1/ci/app/Models/Db_model.php(45): CodeIgniter\Database\BaseConnection->query()
+#4 /home/2024DIFAL3/e22100290/public_html/V1/ci/app/Controllers/Compte.php(52): App\Models\Db_model->set_compte()
+#5 /home/2024DIFAL3/e22100290/public_html/V1/ci/system/CodeIgniter.php(941): App\Controllers\Compte->creer()
+#6 /home/2024DIFAL3/e22100290/public_html/V1/ci/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#7 /home/2024DIFAL3/e22100290/public_html/V1/ci/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/2024DIFAL3/e22100290/public_html/V1/ci/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-11-09 11:37:00 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry 'zfsqfqzfg' for key 'PRIMARY'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 APPPATH/Models/Db_model.php(45): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Compte.php(52): App\Models\Db_model->set_compte()
+ 3 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Compte->creer()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-09 11:37:00 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry 'zfsqfqzfg' for key 'PRIMARY'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH/Models/Db_model.php(45): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH/Controllers/Compte.php(52): App\Models\Db_model->set_compte()
+ 5 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Compte->creer()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-09 11:37:00 --> [Caused by] mysqli_sql_exception: Duplicate entry 'zfsqfqzfg' for key 'PRIMARY'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 APPPATH/Models/Db_model.php(45): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Controllers/Compte.php(52): App\Models\Db_model->set_compte()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Compte->creer()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-11-09 11:37:01 --> mysqli_sql_exception: Duplicate entry 'zfsqfqzfg' for key 'PRIMARY' in /home/2024DIFAL3/e22100290/public_html/V1/ci/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/2024DIFAL3/e22100290/public_html/V1/ci/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/2024DIFAL3/e22100290/public_html/V1/ci/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/2024DIFAL3/e22100290/public_html/V1/ci/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/2024DIFAL3/e22100290/public_html/V1/ci/app/Models/Db_model.php(45): CodeIgniter\Database\BaseConnection->query()
+#4 /home/2024DIFAL3/e22100290/public_html/V1/ci/app/Controllers/Compte.php(52): App\Models\Db_model->set_compte()
+#5 /home/2024DIFAL3/e22100290/public_html/V1/ci/system/CodeIgniter.php(941): App\Controllers\Compte->creer()
+#6 /home/2024DIFAL3/e22100290/public_html/V1/ci/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#7 /home/2024DIFAL3/e22100290/public_html/V1/ci/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/2024DIFAL3/e22100290/public_html/V1/ci/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-11-09 11:37:01 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry 'zfsqfqzfg' for key 'PRIMARY'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 APPPATH/Models/Db_model.php(45): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Compte.php(52): App\Models\Db_model->set_compte()
+ 3 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Compte->creer()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-09 11:37:01 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry 'zfsqfqzfg' for key 'PRIMARY'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH/Models/Db_model.php(45): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH/Controllers/Compte.php(52): App\Models\Db_model->set_compte()
+ 5 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Compte->creer()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-09 11:37:01 --> [Caused by] mysqli_sql_exception: Duplicate entry 'zfsqfqzfg' for key 'PRIMARY'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 APPPATH/Models/Db_model.php(45): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Controllers/Compte.php(52): App\Models\Db_model->set_compte()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Compte->creer()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-09 11:37:16 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+in SYSTEMPATH/Database/BaseConnection.php on line 884.
+ 1 SYSTEMPATH/Model.php(662): CodeIgniter\Database\BaseConnection->table()
+ 2 SYSTEMPATH/Model.php(864): CodeIgniter\Model->builder()
+ 3 APPPATH/Controllers/Compte.php(56): CodeIgniter\Model->__call()
+ 4 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Compte->creer()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-11-09 11:46:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-09 11:47:31 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "compte/affichage_candidature.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/Candidature.php(41): view()
+ 4 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Candidature->afficher()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-09 11:47:57 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "candidature/affichage_candidature.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/Candidature.php(41): view()
+ 4 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Candidature->afficher()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-11-09 11:48:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-09 11:55:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-09 12:01:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-09 12:01:37 --> ErrorException: Undefined variable $message
+in APPPATH/Views/candidature/affichage_candidature.php on line 3.
+ 1 APPPATH/Views/candidature/affichage_candidature.php(3): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(228): include('/home/2024DIFAL3/e22100290/public_html/V1/ci/app/Views/candidature/affichage_candidature.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Candidature.php(49): view()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Candidature->afficher()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-11-09 12:02:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-09 12:02:07 --> ErrorException: Undefined variable $message
+in APPPATH/Views/candidature/affichage_candidature.php on line 3.
+ 1 APPPATH/Views/candidature/affichage_candidature.php(3): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(228): include('/home/2024DIFAL3/e22100290/public_html/V1/ci/app/Views/candidature/affichage_candidature.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Candidature.php(49): view()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Candidature->afficher()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-11-09 12:02:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-09 12:02:09 --> ErrorException: Undefined variable $message
+in APPPATH/Views/candidature/affichage_candidature.php on line 3.
+ 1 APPPATH/Views/candidature/affichage_candidature.php(3): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(228): include('/home/2024DIFAL3/e22100290/public_html/V1/ci/app/Views/candidature/affichage_candidature.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Candidature.php(49): view()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Candidature->afficher()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-11-09 12:03:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-09 12:03:17 --> ErrorException: Undefined variable $message
+in APPPATH/Views/candidature/affichage_candidature.php on line 3.
+ 1 APPPATH/Views/candidature/affichage_candidature.php(3): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(228): include('/home/2024DIFAL3/e22100290/public_html/V1/ci/app/Views/candidature/affichage_candidature.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Candidature.php(49): view()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Candidature->afficher()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-11-09 12:05:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-09 12:06:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-09 12:06:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-09 12:07:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-09 12:07:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-09 12:07:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-09 12:08:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-09 12:08:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-09 12:19:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-09 12:20:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-09 12:20:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-09 12:20:19 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+in SYSTEMPATH/Database/BaseConnection.php on line 884.
+ 1 SYSTEMPATH/Model.php(662): CodeIgniter\Database\BaseConnection->table()
+ 2 SYSTEMPATH/Model.php(864): CodeIgniter\Model->builder()
+ 3 APPPATH/Controllers/Compte.php(56): CodeIgniter\Model->__call()
+ 4 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Compte->creer()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-11-09 12:20:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-09 12:20:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-09 12:20:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-09 12:20:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-09 12:20:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-09 12:21:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-09 12:21:03 --> ErrorException: Undefined variable $data
+in APPPATH/Controllers/Candidature.php on line 31.
+ 1 APPPATH/Controllers/Candidature.php(31): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Candidature->afficher()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-11-09 12:24:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-11-09 12:24:41 --> mysqli_sql_exception: Unknown column 'CAN0234567890123456' in 'where clause' in /home/2024DIFAL3/e22100290/public_html/V1/ci/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/2024DIFAL3/e22100290/public_html/V1/ci/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/2024DIFAL3/e22100290/public_html/V1/ci/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/2024DIFAL3/e22100290/public_html/V1/ci/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/2024DIFAL3/e22100290/public_html/V1/ci/app/Models/Db_model.php(53): CodeIgniter\Database\BaseConnection->query()
+#4 /home/2024DIFAL3/e22100290/public_html/V1/ci/app/Controllers/Candidature.php(34): App\Models\Db_model->get_candidature()
+#5 /home/2024DIFAL3/e22100290/public_html/V1/ci/system/CodeIgniter.php(941): App\Controllers\Candidature->afficher()
+#6 /home/2024DIFAL3/e22100290/public_html/V1/ci/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#7 /home/2024DIFAL3/e22100290/public_html/V1/ci/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/2024DIFAL3/e22100290/public_html/V1/ci/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-11-09 12:24:41 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'CAN0234567890123456' in 'where clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 APPPATH/Models/Db_model.php(53): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Candidature.php(34): App\Models\Db_model->get_candidature()
+ 3 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Candidature->afficher()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-09 12:24:41 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'CAN0234567890123456' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH/Models/Db_model.php(53): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH/Controllers/Candidature.php(34): App\Models\Db_model->get_candidature()
+ 5 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Candidature->afficher()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-09 12:24:41 --> [Caused by] mysqli_sql_exception: Unknown column 'CAN0234567890123456' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 APPPATH/Models/Db_model.php(53): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Controllers/Candidature.php(34): App\Models\Db_model->get_candidature()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Candidature->afficher()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-11-09 12:25:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-09 12:25:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-09 13:04:55 --> ErrorException: Undefined variable $can
+in APPPATH/Views/candidature/candidature_success.php on line 18.
+ 1 APPPATH/Views/candidature/candidature_success.php(18): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(228): include('/home/2024DIFAL3/e22100290/public_html/V1/ci/app/Views/candidature/candidature_success.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Candidature.php(45): view()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Candidature->afficher()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-11-09 13:04:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-09 13:05:00 --> ErrorException: Undefined variable $can
+in APPPATH/Views/candidature/candidature_success.php on line 18.
+ 1 APPPATH/Views/candidature/candidature_success.php(18): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(228): include('/home/2024DIFAL3/e22100290/public_html/V1/ci/app/Views/candidature/candidature_success.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Candidature.php(45): view()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Candidature->afficher()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-11-09 13:06:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-09 13:10:21 --> ErrorException: Undefined variable $can
+in APPPATH/Views/candidature/candidature_success.php on line 24.
+ 1 APPPATH/Views/candidature/candidature_success.php(24): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(228): include('/home/2024DIFAL3/e22100290/public_html/V1/ci/app/Views/candidature/candidature_success.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Candidature.php(45): view()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Candidature->afficher()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-09 13:10:56 --> Error: Cannot use object of type CodeIgniter\Database\MySQLi\Result as array
+in APPPATH/Views/candidature/candidature_success.php on line 24.
+ 1 SYSTEMPATH/View/View.php(228): include()
+ 2 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
+ 4 APPPATH/Controllers/Candidature.php(45): view()
+ 5 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Candidature->afficher()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-09 13:12:06 --> ErrorException: Undefined variable $resultat
+in APPPATH/Models/Db_model.php on line 53.
+ 1 APPPATH/Models/Db_model.php(53): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Candidature.php(34): App\Models\Db_model->get_candidature()
+ 3 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Candidature->afficher()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-09 13:12:22 --> Error: Call to a member function getRow() on string
+in APPPATH/Models/Db_model.php on line 53.
+ 1 APPPATH/Controllers/Candidature.php(34): App\Models\Db_model->get_candidature()
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Candidature->afficher()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-09 13:12:56 --> Error: Cannot use object of type stdClass as array
+in APPPATH/Views/candidature/candidature_success.php on line 24.
+ 1 SYSTEMPATH/View/View.php(228): include()
+ 2 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
+ 4 APPPATH/Controllers/Candidature.php(45): view()
+ 5 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Candidature->afficher()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-09 13:14:43 --> TypeError: view(): Argument #2 ($data) must be of type array, stdClass given, called in /home/2024DIFAL3/e22100290/public_html/V1/ci/app/Controllers/Candidature.php on line 40
+in SYSTEMPATH/Common.php on line 1166.
+ 1 APPPATH/Controllers/Candidature.php(40): view()
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Candidature->afficher()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-09 13:14:59 --> TypeError: view(): Argument #2 ($data) must be of type array, stdClass given, called in /home/2024DIFAL3/e22100290/public_html/V1/ci/app/Controllers/Candidature.php on line 39
+in SYSTEMPATH/Common.php on line 1166.
+ 1 APPPATH/Controllers/Candidature.php(39): view()
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Candidature->afficher()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-09 13:19:30 --> Error: Cannot use object of type stdClass as array
+in APPPATH/Views/candidature/candidature_success.php on line 24.
+ 1 SYSTEMPATH/View/View.php(228): include()
+ 2 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
+ 4 APPPATH/Controllers/Candidature.php(41): view()
+ 5 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Candidature->afficher()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-11-09 13:23:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-09 13:25:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-09 13:25:54 --> ErrorException: Undefined variable $msg
+in APPPATH/Views/candidature/affichage_candidature.php on line 3.
+ 1 APPPATH/Views/candidature/affichage_candidature.php(3): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(228): include('/home/2024DIFAL3/e22100290/public_html/V1/ci/app/Views/candidature/affichage_candidature.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Candidature.php(54): view()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Candidature->afficher()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-11-09 13:27:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-09 13:27:03 --> ErrorException: Undefined variable $msg
+in APPPATH/Views/candidature/affichage_candidature.php on line 3.
+ 1 APPPATH/Views/candidature/affichage_candidature.php(3): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(228): include('/home/2024DIFAL3/e22100290/public_html/V1/ci/app/Views/candidature/affichage_candidature.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Candidature.php(43): view()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Candidature->afficher()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-11-09 13:27:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-09 13:27:04 --> ErrorException: Undefined variable $msg
+in APPPATH/Views/candidature/affichage_candidature.php on line 3.
+ 1 APPPATH/Views/candidature/affichage_candidature.php(3): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(228): include('/home/2024DIFAL3/e22100290/public_html/V1/ci/app/Views/candidature/affichage_candidature.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Candidature.php(43): view()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Candidature->afficher()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-11-09 13:27:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-09 13:27:04 --> ErrorException: Undefined variable $msg
+in APPPATH/Views/candidature/affichage_candidature.php on line 3.
+ 1 APPPATH/Views/candidature/affichage_candidature.php(3): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(228): include('/home/2024DIFAL3/e22100290/public_html/V1/ci/app/Views/candidature/affichage_candidature.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Candidature.php(43): view()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Candidature->afficher()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-11-09 13:27:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-09 13:27:17 --> ErrorException: Undefined variable $msg
+in APPPATH/Views/candidature/affichage_candidature.php on line 3.
+ 1 APPPATH/Views/candidature/affichage_candidature.php(3): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(228): include('/home/2024DIFAL3/e22100290/public_html/V1/ci/app/Views/candidature/affichage_candidature.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Candidature.php(43): view()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Candidature->afficher()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-11-09 13:27:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-09 13:27:18 --> ErrorException: Undefined variable $msg
+in APPPATH/Views/candidature/affichage_candidature.php on line 3.
+ 1 APPPATH/Views/candidature/affichage_candidature.php(3): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(228): include('/home/2024DIFAL3/e22100290/public_html/V1/ci/app/Views/candidature/affichage_candidature.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Candidature.php(43): view()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Candidature->afficher()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-11-09 13:27:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-09 13:27:18 --> ErrorException: Undefined variable $msg
+in APPPATH/Views/candidature/affichage_candidature.php on line 3.
+ 1 APPPATH/Views/candidature/affichage_candidature.php(3): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(228): include('/home/2024DIFAL3/e22100290/public_html/V1/ci/app/Views/candidature/affichage_candidature.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Candidature.php(43): view()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Candidature->afficher()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-11-09 13:27:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-09 13:27:27 --> Error: Call to a member function getValidated() on null
+in APPPATH/Controllers/Candidature.php on line 22.
+ 1 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Candidature->afficher()
+ 2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-11-09 13:27:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-09 13:28:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-09 13:28:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-09 13:28:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-09 13:30:01 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH/Views/candidature/candidature_success.php on line 24.
+ 1 APPPATH/Views/candidature/candidature_success.php(24): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(228): include('/home/2024DIFAL3/e22100290/public_html/V1/ci/app/Views/candidature/candidature_success.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Candidature.php(41): view()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Candidature->afficher()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-09 13:31:38 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH/Views/candidature/candidature_success.php on line 24.
+ 1 APPPATH/Views/candidature/candidature_success.php(24): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(228): include('/home/2024DIFAL3/e22100290/public_html/V1/ci/app/Views/candidature/candidature_success.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Candidature.php(41): view()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Candidature->afficher()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-11-09 13:32:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-09 13:32:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-09 13:32:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-09 13:32:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-09 13:32:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-09 13:32:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-09 13:36:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-09 13:38:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-09 13:38:53 --> ErrorException: Attempt to read property "nom_can" on null
+in APPPATH/Views/candidature/candidature_success.php on line 24.
+ 1 APPPATH/Views/candidature/candidature_success.php(24): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(228): include('/home/2024DIFAL3/e22100290/public_html/V1/ci/app/Views/candidature/candidature_success.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Candidature.php(38): view()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Candidature->afficher()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-09 13:39:42 --> TypeError: Cannot access offset of type string on string
+in APPPATH/Models/Db_model.php on line 50.
+ 1 APPPATH/Controllers/Candidature.php(34): App\Models\Db_model->get_candidature()
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Candidature->afficher()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-09 13:39:42 --> TypeError: Cannot access offset of type string on string
+in APPPATH/Models/Db_model.php on line 50.
+ 1 APPPATH/Controllers/Candidature.php(34): App\Models\Db_model->get_candidature()
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Candidature->afficher()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-11-09 13:39:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-09 13:39:50 --> TypeError: Cannot access offset of type string on string
+in APPPATH/Models/Db_model.php on line 50.
+ 1 APPPATH/Controllers/Candidature.php(34): App\Models\Db_model->get_candidature()
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Candidature->afficher()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-09 13:40:01 --> ErrorException: Undefined variable $recuperation
+in APPPATH/Controllers/Candidature.php on line 33.
+ 1 APPPATH/Controllers/Candidature.php(33): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Candidature->afficher()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-09 13:40:14 --> ErrorException: Undefined variable $recuperation
+in APPPATH/Controllers/Candidature.php on line 33.
+ 1 APPPATH/Controllers/Candidature.php(33): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Candidature->afficher()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-09 13:40:15 --> ErrorException: Undefined variable $recuperation
+in APPPATH/Controllers/Candidature.php on line 33.
+ 1 APPPATH/Controllers/Candidature.php(33): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Candidature->afficher()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-09 13:40:16 --> ErrorException: Undefined variable $recuperation
+in APPPATH/Controllers/Candidature.php on line 33.
+ 1 APPPATH/Controllers/Candidature.php(33): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Candidature->afficher()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-09 13:40:17 --> ErrorException: Undefined variable $recuperation
+in APPPATH/Controllers/Candidature.php on line 33.
+ 1 APPPATH/Controllers/Candidature.php(33): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Candidature->afficher()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-09 13:40:31 --> ErrorException: Attempt to read property "nom_can" on null
+in APPPATH/Views/candidature/candidature_success.php on line 24.
+ 1 APPPATH/Views/candidature/candidature_success.php(24): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(228): include('/home/2024DIFAL3/e22100290/public_html/V1/ci/app/Views/candidature/candidature_success.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Candidature.php(39): view()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Candidature->afficher()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-11-09 13:40:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-09 13:40:37 --> ErrorException: Attempt to read property "nom_can" on null
+in APPPATH/Views/candidature/candidature_success.php on line 24.
+ 1 APPPATH/Views/candidature/candidature_success.php(24): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(228): include('/home/2024DIFAL3/e22100290/public_html/V1/ci/app/Views/candidature/candidature_success.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Candidature.php(39): view()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Candidature->afficher()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-11-09 13:40:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-09 13:41:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-09 13:45:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-09 13:45:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-09 13:45:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

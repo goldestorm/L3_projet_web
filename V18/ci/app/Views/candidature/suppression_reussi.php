@@ -1,0 +1,1 @@
+<h1>Suppression réussie</h1>
